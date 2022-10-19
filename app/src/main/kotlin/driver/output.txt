@@ -1,0 +1,36 @@
+Create Anshika Garg
+ 1
+Create Vranda Garg
+ 2
+Deposit 1 500
+ 500
+Deposit 1 100
+ Exception: Minimum deposit amount is 500 per transaction
+Deposit 1 60000
+ Exception: Maximum deposit amount is 50000 per transaction
+Deposit 1 10000
+ 10500
+Deposit 1 10000
+ 20500
+Balance 1
+ 20500
+Withdraw 1 500
+ Exception: Minimum withdrawal amount is 1000 per transaction
+Withdraw 1 2000
+ 18500
+Withdraw 1 200000
+ Exception: Maximum withdrawal amount is 25000 per transaction
+Deposit 2 20000
+ 20000
+Transfer 1 2 1000
+ Successful
+Transfer 1 2 1000
+ Successful
+Transfer 1 2 1000
+ Exception: No more than 3 withdrawals are allowed in a day
+Transfer 2 1 5000
+ Exception: No more than 3 deposits are allowed in a day
+Balance 1
+ 16500
+Balance 2
+ 22000
